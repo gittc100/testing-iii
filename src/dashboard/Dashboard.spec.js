@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Display from '../display/Display.js';
 import Controls from '../controls/Controls.js';
 
+describe("<DashBoard/>", () => {
 describe("Display Component", () => {
   it("Renders Without Crashing", () => {
     const div = document.createElement("div");
@@ -23,3 +24,4 @@ describe("Controls Component", () => {
       ReactDOM.unmountComponentAtNode(div);
     });
   });
+});
